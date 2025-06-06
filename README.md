@@ -134,6 +134,152 @@ STEP 9 - Register PHP from within IIS | Reload IIS
 
 ![osTicketLab-Step-9e](https://github.com/user-attachments/assets/05387786-a128-4bbd-b781-a668107f9d5d)
 
+STEP 10 - Install osTicket
+
+ - Select osTicket Installation File > Right Click and Extract all "osTicket-v1.15.8"
+
+![osTicketLab-Step-10a](https://github.com/user-attachments/assets/8d61f349-105d-4c35-bc5e-bfe5c8ffa166)
+
+ - Open a second file explorer folder and select This PC > Windows (C:) > inetpub > wwwroot
+
+![osTicketLab-Step-10c](https://github.com/user-attachments/assets/f0a8e8b1-8a92-458c-9a56-4af526987813)
+
+ - In the osTicket Installation file, we just extracted "osTicket-v1.15.8"
+
+Find the upload file and move it to the wwwroot folder
+
+![osTicketLab-Step-10d](https://github.com/user-attachments/assets/fd7c2353-197f-4162-bb38-848d71ee63fc)
+
+ - Rename the upload file to "osTicket" and make sure it is spelled correctly
+
+![osTicketLab-Step-10e](https://github.com/user-attachments/assets/816b074e-f49d-429c-8bc1-abf0e9c05280)
+
+STEP 11 - Reload IIS
+
+ - Once you get loaded back into IIS as Admin > select "stop" and then "start" like we did in step 9
+ - From there toggle down "Sites" > "Default Web Site" > Select "osTicket
+
+![osTicketLab-Step-11a](https://github.com/user-attachments/assets/c8aaf948-9eba-44d7-920f-350d44fd7805)
+
+ - Select "Browse *:80 (http)"
+ - Once you select that, osTicket should load onto your web browser
+
+![osTicketLab-Step-11b](https://github.com/user-attachments/assets/6294d6de-6e43-43ac-b57c-62f7bca65f92)
+
+ - Remember all the X's from this page for the next step and once we complete the next step notice a change in them
+
+STEP 12 - Enabling Some Extensions
+
+ - IIS as Admin > Site > Default Web Site > osTicket > PHP Manager
+
+![osTicketLab-Step-12a](https://github.com/user-attachments/assets/e1f937a8-fbf0-4255-946a-6b5a3cda396f)
+
+ - PHP Extensions > Enable or disable an extension
+
+![osTicketLab-Step-12b](https://github.com/user-attachments/assets/fa5bbf5c-3baf-40fe-8ce8-80c0a9d8761a)
+
+ - Enable php_imap.dll | Enable php_intl.dll | Enable php_opcache.dll
+
+![osTicketLab-Step-12c](https://github.com/user-attachments/assets/cb9631c2-c34a-45e1-b5e3-86b2cd554222)
+
+ - Back to the Web Browser and refresh the page, and notice that you have more extensions 
+
+![osTicketLab-Step-12d](https://github.com/user-attachments/assets/2c6dde31-67aa-433b-bc46-e4327bb07878)
+
+STEP 13 - Rename: ost-config.php
+
+ - This PC > Windows (C:) > inetpub > wwwroot > osTicket > Include
+
+Scroll down to where it says ost-sampleconfig.php
+
+![osTicketLab-Step-13a](https://github.com/user-attachments/assets/23f9644c-a4fa-4694-9789-eb06dc86c85a)
+
+ - Rename it to ost-config.php
+
+![osTicketLab-Step-13b](https://github.com/user-attachments/assets/eb0171f7-b435-461e-ab1f-fa888de7f1e8)
+
+STEP 14 - Assign Permissions: ost-config.php
+
+ - Right click ost-config > Properties
+
+![osTicketLab-Step-14a](https://github.com/user-attachments/assets/7cc1c05b-590e-4f72-8985-957ac127605e)
+
+ - Security > Advanced
+
+![osTicketLab-Step-14b](https://github.com/user-attachments/assets/04484f60-fcaa-4646-898c-37be3c4a4da7)
+
+ - Disable Inheritance
+
+![osTicketLab-Step-14c](https://github.com/user-attachments/assets/382c0014-88b9-4cbc-93ce-dd244a21bb71)
+
+ - Add
+
+![osTicketLab-Step-14d](https://github.com/user-attachments/assets/80775e0b-85d1-4830-9836-abed88a38211)
+
+ - Select a principal
+
+![osTicketLab-Step-14e](https://github.com/user-attachments/assets/d3e95b26-e3bd-4262-a03f-1507f7a039d0)
+
+ - Type Everyone > select Check Names > you should see Everyone be underlined > then select OK
+ - This isn't good in real life, but for lab and practice purposes, this is fine.
+
+![osTicketLab-Step-14f](https://github.com/user-attachments/assets/02da36c8-a16a-48fe-acfe-636509481e7b)
+
+ - Select Full Control > Select OK
+
+![osTicketLab-Step-14g](https://github.com/user-attachments/assets/0d18d19d-926c-4e82-a642-193722e0f94c)
+
+ - Select Apply > Select OK
+
+![osTicketLab-Step-14h](https://github.com/user-attachments/assets/24a76d66-7811-4325-bdf8-534e1c8d16a1)
+
+STEP 15 - Setting osTicket in the web browser
+
+ - Select Continue in the Web Browser for osTicket
+
+![osTicketLab-Step-15a](https://github.com/user-attachments/assets/d8cde6c3-5988-4bbd-9827-029a69b1324c)
+
+ - Fill out the basic information and make sure that you remember the username and password, and make sure the email addresses are different.
+
+![osTicketLab-Step-15b](https://github.com/user-attachments/assets/1942e4af-f0e4-4e4c-b766-e7cd208ebc8a)
+
+ - Back to osTicket Installation Files folder > Install HeidiSQL_12.3.0.6589_Setup
+
+![osTicketLab-Step-15c](https://github.com/user-attachments/assets/c01d8078-6888-4853-9a95-37a17d0541d6)
+
+ - Once installed > select New
+
+![osTicketLab-Step-15d](https://github.com/user-attachments/assets/7d9391ae-a18b-49bf-9e89-cd0891b774cb)
+
+ - Back in step 7, enter the password you selected and select Open.
+
+![osTicketLab-Step-15e](https://github.com/user-attachments/assets/3fa80357-02fb-4998-afe0-0d63b8a47194)
+
+ - Right Click Unnamed > Create new > Database
+
+![osTicketLab-Step-15f](https://github.com/user-attachments/assets/2a89b9a4-7d88-4f48-8319-83249a63dac5)
+
+ - Type in osTicket and make sure it is spelled exactly like that > select OK
+
+![osTicketLab-Step-15g](https://github.com/user-attachments/assets/691f3b53-070b-4525-9a67-1f07e815e9c9)
+
+ - Back to the web browser and enter your credentials you selected and then select "Install Now"
+
+![osTicketLab-Step-15h](https://github.com/user-attachments/assets/7256672b-47ed-4543-b8a9-c5346a901b2e)
+
+ - Congrats, you have installed osTicket!!!
+
+![osTicketLab-Step-15i](https://github.com/user-attachments/assets/f4ae92b2-ce20-4fec-a965-def5f75606c7)
+
+
+
+
+
+
+
+
+
+
 
 
 
