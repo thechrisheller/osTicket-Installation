@@ -27,17 +27,19 @@ osTicket Files
 
 <p>
 
-STEP 1 - Create a Virtual Machine - I will be using Microsoft Azure
+<h2>STEP 1 - Create a Virtual Machine - I will be using Microsoft Azure</h2>
 
 Once you create your VM on Azure, copy the public IP Address that is populated for you when creating the Windows VM. (Example: the public IP that was populated for me was 20.51.217.72) Use Remote Desktop and sign in using the login credentials you have chosen.
 
 ![osTicketLab-Step-1](https://github.com/user-attachments/assets/571b9d0e-624c-4f04-a077-d99f7370716a)
 
-STEP 2 - Download the [osTicket Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) inside of your Virtual Machine. Once they download, go ahead and extract the files. I extracted them to the desktop for easy access.
+<h2>STEP 2</h2>
+
+- Download the [osTicket Installation Files](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) inside your Virtual Machine. Once they download, go ahead and extract the files. I extracted them to the desktop for easy access.
 
 ![osTicketLab-Step-2](https://github.com/user-attachments/assets/41173e90-15d6-498a-b17e-82bbd1044029)
 
-STEP 3 - Install | Enable IIS in Windows WITH CGI
+<h2>STEP 3 - Install | Enable IIS in Windows WITH CGI</h2>
 
 - Go to "Control Panel" > Under Programs ”Uninstall Program” > "Turn Windows features on or off"
 
@@ -51,7 +53,7 @@ STEP 3 - Install | Enable IIS in Windows WITH CGI
 
 ![osTicketLab-Step-3c](https://github.com/user-attachments/assets/2e81a392-881d-4833-8ac9-ba8f626407a3)
 
-STEP 4 - Install: PHP Manager | Install: rewrite_amd64_en-US.msi File
+<h2>STEP 4 - Install: PHP Manager | Install: rewrite_amd64_en-US.msi File</h2>
 
 Go back to the osTicket Installation Files we extracted back in step 1 and open the folder, and Download
  - PHPManagerForIIS_V1.5.0
@@ -59,23 +61,28 @@ Go back to the osTicket Installation Files we extracted back in step 1 and open 
 
 ![osTicketLab-Step-4](https://github.com/user-attachments/assets/f60702a4-24c6-4e36-9bf8-55cfc9f7f6a5)
 
-STEP 5 - Create a Folder in "Windows (C:) called "PHP" | unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
+<h2>STEP 5</h2>
+ 
+ - Create a Folder in "Windows (C:) called "PHP" | unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
 
 ![osTicketLab-Step-5](https://github.com/user-attachments/assets/14223602-c74c-4da4-92a8-379d3913713a)
 
  - Extract PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder
 
-Go back to the osTicket Installation Files that we extracted from step 1 and right click, and extract all of "php-7.3.8-nts-Win32-VC15-x86" file and extract it to the "PHP" folder we just created.
+ - Go back to the osTicket Installation Files that we extracted from step 1 and right click, and extract all of "php-7.3.8-nts-Win32-VC15-x86" file and extract it to the "PHP" folder we just created.
 
 ![osTicketLab-Step-5b](https://github.com/user-attachments/assets/512c88d9-cbbf-4c44-b5bc-ed68d68dd996)
 
 
-STEP 6 - Install "VC_redist.x86"
+<h2>STEP 6</h2>
+ 
+ - Install "VC_redist.x86"
 
 ![osTicketLab-Step-6](https://github.com/user-attachments/assets/3ca2a0f3-3395-44a5-b14f-ebbcf39fa4e0)
 
-STEP 7 - Install "MySQL 5.5.62"
+<h2>STEP 7</h2>
 
+ - Install "MySQL 5.5.62"
  - Install "MySQL 5.5.62"
 
 ![osTicketLab-Step-7a](https://github.com/user-attachments/assets/611296bc-41fa-4b9a-9cc9-6478783bfa9b)
@@ -104,7 +111,7 @@ STEP 7 - Install "MySQL 5.5.62"
 
 ![osTicketLab-Step-7g](https://github.com/user-attachments/assets/1da6d30c-cd07-4378-839b-51e75ba99b78)
 
-STEP 8 - Open IIS as an Admin
+<h2>STEP 8 - Open IIS as an Admin</h2>
 
 ![osTicketLab-Step-8a](https://github.com/user-attachments/assets/ef45eb20-3b41-437b-aa7e-7754ecae14e5)
 
@@ -112,7 +119,7 @@ STEP 8 - Open IIS as an Admin
 
 ![osTicketLab-Step-8b](https://github.com/user-attachments/assets/c3be8b1d-d9ba-47e7-b683-815e0281310e)
 
-STEP 9 - Register PHP from within IIS | Reload IIS
+<h2>STEP 9 - Register PHP from within IIS | Reload IIS</h2>
 
  - Click PHP Manager
 
@@ -134,7 +141,7 @@ STEP 9 - Register PHP from within IIS | Reload IIS
 
 ![osTicketLab-Step-9e](https://github.com/user-attachments/assets/05387786-a128-4bbd-b781-a668107f9d5d)
 
-STEP 10 - Install osTicket
+<h2>STEP 10 - Install osTicket</h2>
 
  - Select osTicket Installation File > Right Click and Extract all "osTicket-v1.15.8"
 
@@ -154,7 +161,7 @@ Find the upload file and move it to the wwwroot folder
 
 ![osTicketLab-Step-10e](https://github.com/user-attachments/assets/816b074e-f49d-429c-8bc1-abf0e9c05280)
 
-STEP 11 - Reload IIS
+<h2>STEP 11 - Reload IIS</h2>
 
  - Once you get loaded back into IIS as Admin > select "stop" and then "start" like we did in step 9
  - From there toggle down "Sites" > "Default Web Site" > Select "osTicket
@@ -168,7 +175,7 @@ STEP 11 - Reload IIS
 
  - Remember all the X's from this page for the next step and once we complete the next step notice a change in them
 
-STEP 12 - Enabling Some Extensions
+<h2>STEP 12 - Enabling Some Extensions</h2>
 
  - IIS as Admin > Site > Default Web Site > osTicket > PHP Manager
 
@@ -186,11 +193,11 @@ STEP 12 - Enabling Some Extensions
 
 ![osTicketLab-Step-12d](https://github.com/user-attachments/assets/2c6dde31-67aa-433b-bc46-e4327bb07878)
 
-STEP 13 - Rename: ost-config.php
+<h2>STEP 13</h2>
 
+ - Rename: ost-config.php
  - This PC > Windows (C:) > inetpub > wwwroot > osTicket > Include
-
-Scroll down to where it says ost-sampleconfig.php
+ - Scroll down to where it says ost-sampleconfig.php
 
 ![osTicketLab-Step-13a](https://github.com/user-attachments/assets/23f9644c-a4fa-4694-9789-eb06dc86c85a)
 
@@ -198,9 +205,10 @@ Scroll down to where it says ost-sampleconfig.php
 
 ![osTicketLab-Step-13b](https://github.com/user-attachments/assets/eb0171f7-b435-461e-ab1f-fa888de7f1e8)
 
-STEP 14 - Assign Permissions: ost-config.php
+<h2>STEP 14</h2>
 
- - Right click ost-config > Properties
+- Assign Permissions: ost-config.php
+- Right click ost-config > Properties
 
 ![osTicketLab-Step-14a](https://github.com/user-attachments/assets/7cc1c05b-590e-4f72-8985-957ac127605e)
 
@@ -233,7 +241,7 @@ STEP 14 - Assign Permissions: ost-config.php
 
 ![osTicketLab-Step-14h](https://github.com/user-attachments/assets/24a76d66-7811-4325-bdf8-534e1c8d16a1)
 
-STEP 15 - Setting osTicket in the web browser
+<h2>STEP 15 - Setting osTicket in the web browser</h2>
 
  - Select Continue in the Web Browser for osTicket
 
@@ -271,7 +279,7 @@ STEP 15 - Setting osTicket in the web browser
 
 ![osTicketLab-Step-15i](https://github.com/user-attachments/assets/f4ae92b2-ce20-4fec-a965-def5f75606c7)
 
-Final Step - Check to see if you can log in as admin
+<h2>Final Step - Check to see if you can log in as admin</h2>
 
 - Copy Paste Into VM Browser
 - [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
