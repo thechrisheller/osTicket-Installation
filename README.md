@@ -271,6 +271,20 @@ STEP 15 - Setting osTicket in the web browser
 
 ![osTicketLab-Step-15i](https://github.com/user-attachments/assets/f4ae92b2-ce20-4fec-a965-def5f75606c7)
 
+Final Step - Check to see if you can log in as admin
+
+- Copy Paste Into VM Browser
+- [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
+
+![Final Step 1a](https://github.com/user-attachments/assets/e20fbde8-600b-4a8e-81ce-7e80389e8176)
+
+ - Once Logged in this is what the dashboard should look like.
+
+![Final Step 1b](https://github.com/user-attachments/assets/1ba5f5ec-7b90-4230-9e20-34c9b5cfa5ed)
+
+
+  
+   
 
 
 
