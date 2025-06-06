@@ -104,6 +104,39 @@ STEP 7 - Install "MySQL 5.5.62"
 
 ![osTicketLab-Step-7g](https://github.com/user-attachments/assets/1da6d30c-cd07-4378-839b-51e75ba99b78)
 
+STEP 8 - Open IIS as an Admin
+
+![osTicketLab-Step-8a](https://github.com/user-attachments/assets/ef45eb20-3b41-437b-aa7e-7754ecae14e5)
+
+ - This is what IIS should look like
+
+![osTicketLab-Step-8b](https://github.com/user-attachments/assets/c3be8b1d-d9ba-47e7-b683-815e0281310e)
+
+STEP 9 - Register PHP from within IIS | Reload IIS
+
+ - Click PHP Manager
+
+![osTicketLab-Step-9a](https://github.com/user-attachments/assets/711b3bb5-aeaa-4554-9696-20a415c06739)
+
+ - Select "Register new PHP version"
+
+![osTicketLab-Step-9b](https://github.com/user-attachments/assets/9831b282-482a-430b-9226-b0139a90d904)
+
+ - Select the "..."
+
+![osTicketLab-Step-9c](https://github.com/user-attachments/assets/8d6dbfa7-9a4b-4cf1-a97d-cae76cd6db34)
+
+ - This PC > Window (C:) > PHP Folder > Select "php-cgi" (Application)
+
+![osTicketLab-Step-9d](https://github.com/user-attachments/assets/c2ba86dc-fac7-4ea7-be9e-a6ff8a3f3242)
+
+ - Go back to the original screen and select "stop" then select "start" on the top right
+
+![osTicketLab-Step-9e](https://github.com/user-attachments/assets/05387786-a128-4bbd-b781-a668107f9d5d)
+
+
+
+
 
 
 
