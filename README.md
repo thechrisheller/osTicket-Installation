@@ -282,21 +282,6 @@ Final Step - Check to see if you can log in as admin
 
 ![Final Step 1b](https://github.com/user-attachments/assets/1ba5f5ec-7b90-4230-9e20-34c9b5cfa5ed)
 
+<h2>Conclusion</h2>
 
-  
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This concludes our project. We successfully installed osTicket on our Windows virtual machine! Make sure to stop the VM in Azure so that you don't run up your bill while not in use. 
