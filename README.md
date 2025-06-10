@@ -217,6 +217,7 @@ Find the upload file and move it to the wwwroot folder
 ![osTicketLab-Step-14b](https://github.com/user-attachments/assets/04484f60-fcaa-4646-898c-37be3c4a4da7)
 
  - Disable Inheritance
+ - Remove all
 
 ![osTicketLab-Step-14c](https://github.com/user-attachments/assets/382c0014-88b9-4cbc-93ce-dd244a21bb71)
 
